@@ -16,7 +16,7 @@ class Livre
     #[ORM\Column(length: 50)]
     private ?string $titre = null;
 
-    #[ORM\Column]
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTime $datePublication = null;
 
     #[ORM\Column]

@@ -23,7 +23,7 @@ class Auteur
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $biographie = null;
 
-    #[ORM\Column]
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTime $dateNaissance = null;
 
     public function getId(): ?int
